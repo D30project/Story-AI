@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToolBaz|Free AI Writer Tools</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="images/toolbBaz.png">
+  <link rel="stylesheet" href="story.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown .dropbtn {
+      background-color: orange;
+      color: white;
+      padding: 10px;
+      font-size: 12px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      height: 300px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .form-columns {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .form-columns input {}
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .forms-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-column {}
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 10px;
+
+      padding: 10px;
+    }
+
+    .grid-container>div {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid black;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .group {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .link {
+      border: 1px solid black;
+      padding: 20px;
+      background-color: whitesmoke;
+      border-radius: 4px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="background-color: rgb(245, 242, 238); margin: 0; padding: 0%">
+    <img src="images/toolbBaz.png" alt="toolbaz" width="30px" height="35" />
+    <a href="https://toolbaz.com/" style="text-decoration: none" class="left link"><span
+        style="font-weight: bold">ToolBaz.com</span></a>
+
+    <span style="">
+      <a href="https://google.com" style="text-decoration: none">Blug</a>
+      &nbsp; &nbsp;
+      <a href="https://google.com" style="text-decoration: none">Report Bug</a>
+      &nbsp; &nbsp;
+      <a href="https://gmail.com" style="text-decoration: none">Tools Suggest</a>
+    </span>
+  </div>
+
+  <br />
+  <div style="
+        background-color: orange;
+        margin: 0%;
+        height: 400px;
+        padding: 0%;
+        text-align: center;
+      ">
+    <br />
+    <h1 style="font-size: 70px; margin-top: 80px;">AI Story Genertor </h1>
+    <p style="font-size: 28px; color: black; margin-top: 0px;">
+      Create your own stories with the AI Story Writer
+    </p>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <div>
+      <div style="
+            padding: 25px;
+            background-color: rgb(245, 242, 238);
+            max-width: 800px;
+            margin: 5px auto;
+            border-radius: 10px;
+          ">
+        <div style="display: flex; justify-content: start; align-items: center">
+          <span style="font-size: 30px"> &#x1F4D6;</span>
+          <h3 style="padding-left: 5px">
+            What do you want to write story about?
+          </h3>
+        </div>
+        <div>
+          <textarea name="" id="" cols="80" rows="6" style="margin-top: 15px"
+            placeholder="Enter your prompt here"></textarea>
+
+          <p style="color: #333">
+            Example: Love Story with women and one men.
+          </p>
+          <div>
+            <label for="">Creativity:
+              <input type="range" name="" id="" value="70" />
+            </label>
+          </div>
+          <div>
+            <div>
+              <summary>
+                Advanced Options
+                <details>
+                  <div style="
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                      ">
+                    <div>
+                      <div>
+                        <label for="">Character Details (Optional): </label>
+                        <textarea name="" id="" cols="30" rows="3"
+                          placeholder="Enter character details (e.g., John, a quirky inventor, and Mary a myterious detective.)"
+                          style="display: block; margin-top: 8px"></textarea>
+                      </div>
+                      <div>
+                        <label for="">Setting and Atmosphere (Optional):
+                        </label>
+                        <textarea name="" id="" cols="30" rows="3" placeholder="Enter setting and atmosphere (e.g)."
+                          style="display: block; margin-top: 8px"></textarea>
+                      </div>
+                    </div>
+
+                    <div style="">
+                      <div>
+                        <label for="">Story Size</label>
+                        <select name="" id="">
+                          <option value="">None</option>
+                          <option value="">300-500 words</option>
+                          <option value="">500-1000</option>
+                        </select>
+                      </div>
+                      <br />
+                      <div>
+                        <label for="">Genre (Optional):</label>
+                        <select name="" id="">
+                          <option value="none">None</option>
+                          <option value="sciencefiction">
+                            Science Fiction
+                          </option>
+                          <option value="romance">Romance</option>
+                          <option value="mystery">Mystery</option>
+                          <option value="fantasy">Fantasy</option>
+                          <option value="thriller">Thriller</option>
+                          <option value="historical">Historical</option>
+                          <option value="horror">Horror</option>
+                          <option value="drama">Drama</option>
+                          <option value="comedy">Comedy</option>
+                          <option value="action">Action</option>
+                          <option value="western">Western</option>
+                          <option value="crime">Crime</option>
+                          <option value="science">Science</option>
+                          <option value="fiction">Fiction</option>
+                          <option value="non-fiction">Non-Fiction</option>
+                          <option value="biography">Biography</option>
+                          <option self-help>Self-Help</option>
+                        </select>
+                      </div>
+                      <br />
+                      <div>
+                        <label for="">Narrative Perspective (Optional):</label>
+                        <select name="" id="">
+                          <option value="none">None</option>
+                          <option value="firstperson">First Person</option>
+                          <option value="thirdpersonlimited">
+                            Third Person Limited
+                          </option>
+                          <option value="omniscient">Omniscient</option>
+                          <option value="secondperson">Second Person</option>
+                          <option value="streamofconsciousness">
+                            Stream of Consciousness
+                          </option>
+                          <option value="epistolary">Epistolary</option>
+                          <option value="multipleperspectives">
+                            Multiple Perspectives
+                          </option>
+                          <option value="interactive">Interactive</option>
+                          <option value="observer">Observer</option>
+                          <option value="cameraeye">Camera Eye</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              </summary>
+              <button style="
+                    display: block;
+                    margin: auto;
+                    background-color: orange;
+                    width: 150px;
+                    height: 50;
+                  ">
+                Write
+              </button>
+              <br />
+              <br />
+              <div>
+                <h4 style="
+                      background-color: orange;
+                      width: 800px;
+                      display: flex;
+                      justify-content: start;
+                      align-items: center;
+                      margin-left: -25px;
+                    ">
+                  Related Tools
+                </h4>
+                <div style="
+                      background-color: whitesmoke;
+                      border-radius: 4px;
+                      margin: 0 auto;
+                      font-family: sans-serif;
+                      font-size: 14px;
+                      padding-bottom: 10px;
+                    ">
+                  <div style="
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                      ">
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black">&#128214; Story Genarator</a>
+                    </p>
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black">&#128114; Story Chraacter Gene</a>
+                    </p>
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black">&#128221; Plot Genarator</a>
+                    </p>
+                  </div>
+                  <div style="
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                      ">
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black"> &#128195; Back Story Genarator</a>
+                    </p>
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black"> &#128214; Story Genarator AI</a>
+                    </p>
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black"> &#128212; Book Title Genarator</a>
+                    </p>
+                  </div>
+                  <div style="
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                      ">
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black"> &#128218; AI Comic Genarator</a>
+                    </p>
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black"> &#129412; Fantacy Story Gene</a>
+                    </p>
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black"> &#129497; Character Profile Gene</a>
+                    </p>
+                  </div>
+                  <div style="margin-left: 40px">
+                    <p style="
+                          border: 1px #333 solid;
+                          padding: 20px;
+                          background-color: white;
+                          border-radius: 4px;
+                          margin: 10px;
+                          width: 180px;
+                        ">
+                      <a href="https://www.google.com" target="_blank"
+                        style="text-decoration: none; color: black"> &#128280; Story Prompt Genarator</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div style="
+                    padding: 25px;
+                    background-color: rgb(245, 242, 238);
+                    max-width: 800px;
+                    margin: 5px auto;
+                    border-radius: 10px;
+                  ">
+                <p style="color: black">
+                  Are you struggling to come up with ideas for your next
+                  story? Look no further than Toolbaz Free AI Story Generator!
+                  This creative tool uses artificial intelligence to generate
+                  unique and compelling story ideas at the click of a button.
+                  Whether you're a talented writer looking for inspiration or
+                  a business owner in need of engaging content, Toolbaz AI
+                  Story Maker has got you covered. Let your creativity run
+                  wild, and let us help you bring your stories to life!
+                </p>
+
+                <h5>Let’s discuss it briefly!</h5>
+
+                <br />
+                <img src="images/ai-story-1.webp" alt="Let’s discuss" style="display: block; margin: auto" />
+
+                <br />
+                <h5>How can we use this AI generator?</h5>
+                <p style="color: black">
+                  Here's how to get started: In the "Input" area, provide
+                  information about the story.
+                </p>
+                <ul>
+                  <li>To verify, tick the "reCaptcha" box.</li>
+                  <li>Click the "Write" button.</li>
+                  <li>In the "Output" field, your plot will be generated.</li>
+                </ul>
+                <h4>What is an AI Story Generator?</h4>
+                <p style="color: black">
+                  AI Story Generator is a tool that uses artificial
+                  intelligence to generate unique and original stories based
+                  on input provided by the user.
+                </p>
+
+                <div>
+                  <iframe width="750" height="300" src="https://www.youtube.com/embed/tmTDPMCea5E" title="A Journey (Fashion Film) 
+        for Louis Vuitton by Bruno Aveillan" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <a href="https://www.chatgbt.com" target="_blank" style="text-decoration: none">Create AI Apps in
+                      Minutes Without Coding! (Artificial
+                      Intelligence News + Co Software)</a>
+                  </iframe>
+                </div>
+                <br />
+
+                <p style="color: black">
+                  This technology allows users to input specific details and
+                  parameters, which the AI then uses to create a completely
+                  original story.
+                </p>
+
+                <br />
+                <p style="color: black">
+                  This AI tool is designed to be a helpful resource for anyone
+                  looking to generate new ideas for stories or to create
+                  entire stories from scratch.
+                </p>
+
+                <br />
+                <p style="color: black">
+                  Whether you're an author seeking inspiration or a business
+                  owner in need of engaging content, our AI Story Generator
+                  can help you come up with fresh and compelling ideas.
+                </p>
+
+                <h6>Moreover,</h6>
+
+                <p style="color: black">
+                  With its advanced AI technology, this AI Generator can
+                  analyze and comprehend large amounts of text data, making it
+                  a powerful and effective tool for generating high-quality,
+                  creative tales.
+                </p>
+
+                <h6>💡Note:</h6>
+
+                <p style="color: black">
+                  Keep in mind that AI generators will never be able to
+                  compete with the creative part of the human mind. They are
+                  just helpful story writing assistants who will help you
+                  through the writing process and make your life simpler.
+                </p>
+
+                <h5>How Does An AI Story Generator Work?</h5>
+
+                <p style="color: black">
+                  Have you ever wondered how an AI Plot Generator creates such
+                  unique and engaging story ideas? The process is actually
+                  quite simple. First, the tool uses natural language
+                  processing (NLP) to analyze the keywords and themes you
+                  input.
+                </p>
+
+                <p style="color: black">
+                  It then uses this information to generate a list of
+                  potential story ideas based on your specific interests and
+                  preferences. But that's not all – the AI technology behind
+                  Toolbaz is constantly learning and adapting.
+                </p>
+
+                <p style="color: black">
+                  It uses machine learning algorithms to analyze patterns and
+                  trends in the data it has processed, allowing it to
+                  continually improve and generate even more accurate and
+                  relevant ideas.
+                </p>
+
+                <h3>
+                  So how does this all come together to create a stunning
+                  story idea?
+                </h3>
+
+                <p style="color: black">
+                  The AI technology uses its analysis of your keywords and its
+                  understanding of storytelling conventions to craft a unique
+                  and compelling plot. It even recommends possible character
+                  names and arcs, giving you everything you need to begin
+                  writing your next aesthetic.
+                </p>
+
+                <p style="color: black">
+                  Whether you're a great writer looking for inspiration or a
+                  beginner just starting out! This AI Generator is a powerful
+                  resource that can help bring your stories to life.
+                </p>
+
+                <br />
+
+                <img src="images/ai-story-2.webp" alt="ai-story-2" style="display: block; margin: auto" />
+
+                <br />
+
+                <h3>
+                  Does Writing Stories With AI Make the Work Legitimate?
+                </h3>
+                <p style="color: black">
+                  Are you concerned about the legitimacy of writing stories
+                  with the help of an AI tool? Rest assured – using this tool
+                  does not diminish the legitimacy of your work in any way.
+                </p>
+
+                <p style="color: black">
+                  First and foremost, the ideas generated by Toolbaz AI Story
+                  Generator are just that – ideas. They are not fully
+                  fleshed-out stories and do not contain any original content.
+                  It is up to you, the writer, to take these ideas and craft
+                  them into a unique and compelling narrative using your own
+                  writing skills and creativity.
+                </p>
+
+                <br />
+
+                <img src="images/signupAI.png" alt="signupAI" style="display: block; margin: auto" />
+
+                <br />
+
+                <p style="color: black">
+                  <b>Additionally,</b> using an AI tool can actually enhance
+                  the legitimacy of your work. By providing you with a diverse
+                  range of ideas and inspiration, the tool can help you create
+                  more original and innovative stories that stand out in the
+                  crowded literary market.
+                </p>
+
+                <p style="color: black">
+                  <b>In short,</b> using this AI Story Maker does not detract
+                  from the legitimacy of your work; it can actually help you
+                  create more original and engaging stories that stand out
+                  from the crowd.
+                </p>
+
+                <p style="color: black">
+                  So, don't be afraid to give it a try and see how it can help
+                  boost your writing career.
+                </p>
+
+                <h4>Generate Unlimited Story (100% FREE)</h4>
+                <p style="color: black">
+                  If you're looking for a way to generate AI-based stories,
+                  you've come to the right place. Our tool is 100% free and
+                  can help you create limitless stories with the help of
+                  artificial intelligence. In addition, we have several tools
+                  that will help you add lyrics, poems and rhyme to your
+                  story.
+                </p>
+
+                <h3>Why Should Writers Use AI Story Generators?</h3>
+                <p style="color: black">
+                  AI story generators like Toolbaz's AI Story Generator can
+                  help writers overcome writer's block and generate new ideas.
+                  They can also assist with brainstorming, outlining, and
+                  character development.
+                </p>
+
+                <br />
+
+                <p style="color: black">
+                  Additionally, using AI can help writers save time and focus
+                  on other aspects of the writing process.
+                </p>
+                <br />
+
+                <img src="images/ai-story-3.webp" alt="ai-story-3" style="display: block; margin: auto" />
+
+                <br />
+
+                <p style="color: black">
+                  Start writing after copying and pasting the storyline into a
+                  text editor!
+                </p>
+
+                <h3><b>FAQS:</b></h3>
+
+                <br />
+
+                <h5>
+                  <b>Are only writers able to use this AI generator?</b>
+                </h5>
+
+                <br />
+
+                <p style="color: black">
+                  While this AI Story Writer is primarily designed for
+                  writers, it can also be used by anyone who is interested in
+                  generating creative ideas.
+                </p>
+
+                <p style="color: black">
+                  It can be a helpful tool for students, artists, or anyone
+                  looking to generate unique ideas for a project.
+                </p>
+                <h5><b>Can I use this tool for commercial purposes?</b></h5>
+
+                <br />
+
+                <p style="color: black">
+                  It is important to read and understand the terms of use for
+                  Toolbaz free AI Story Maker before using it for commercial
+                  purposes.
+                </p>
+
+                <h5><b>Is AI Story Writer safe to use?</b></h5>
+
+                <br />
+
+                <p style="color: black">
+                  Toolbaz Artificial Intelligence (AI) Story maker is a safe
+                  and reputable tool.
+                </p>
+
+                <p style="color: black">
+                  <b>However,</b> it is always a good idea to use caution when
+                  using any online tool and to be aware of potential security
+                  risks.
+                </p>
+
+                <h5>
+                  <b>Can I trust the ideas and prompts generated by AI
+                    Generators?</b>
+                </h5>
+
+                <br />
+
+                <p style="color: black">
+                  While the ideas and prompts generated by Toolbaz's Free AI
+                  Story Generator can be a helpful starting point, it is
+                  ultimately up to the writer to determine their suitability
+                  and to use their own judgment and creativity in the writing
+                  process.
+                </p>
+
+                <h5>
+                  <b>Can I contact the developers of Toolbaz if I have
+                    questions or feedback?</b>
+                </h5>
+
+                <br />
+
+                <p style="color: black">
+                  At the moment, there is no way for users to provide
+                  feedback.
+                </p>
+
+                <p style="color: black">
+                  However, we plan to change this as soon as we have analyzed
+                  user data. "Stay tuned for updates!"
+                </p>
+
+                <p style="color: black">
+                  Credits: Image by vectorjuice on Freepik
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-col" style="flex-shrink: 1; margin-left: 20px;">
+      <div>
+        <div style="height: 420px;">
+
+        </div>
+        <div>
+          <h5 style="
+              background-color: orange;
+              font-family: sans-serif;
+              padding: 10px 20px;
+              margin: 10px;
+            ">
+            Content Writing Tools
+          </h5>
+          <div style="
+              background-color: whitesmoke;
+              border-radius: 4px;
+              margin: 0 auto;
+              font-family: sans-serif;
+              font-size: 14px;
+              padding-bottom: 10px;
+              padding-top: 10px;
+            ">
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;"> &#128196; AI Writer</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128114;  AI Content Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128221; Paragraph Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128195; AI Text Genarator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128214; Blog Outline Maker</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128212;  Blog Intro Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129412; AI Copy Writer</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129412; Meta Description</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129497;AI Blog Writer</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128280;  Topic Sentence</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129497;Hook Sentence</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129412; Write Anything</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128212; AI Paper Writer<a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128214; FAQs Generator<a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <h5 style="
+              background-color: orange;
+              font-family: sans-serif;
+              padding: 10px 20px;
+              margin: 10px;
+            ">
+            Book & Story Writing
+          </h5>
+          <div style="
+              background-color: whitesmoke;
+              border-radius: 4px;
+              margin: 0 auto;
+              font-family: sans-serif;
+              font-size: 14px;
+              padding-bottom: 10px;
+              padding-top: 10px;
+            ">
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128221; Story Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128114; Story Character Gene</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;"> &#128196; Plot Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128114; Backstory Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128221; Story Genarator AI</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128214; Book Title Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128212; AI Comic Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129412; Fantasy Story Gene</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129497; Character Profile Gene</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128280; Story Prompt Generator</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <h5 style="
+              background-color: orange;
+              font-family: sans-serif;
+              padding: 10px 20px;
+              margin: 10px;
+            ">
+            Poem & Lyrics Writing
+          </h5>
+          <div style="
+              background-color: whitesmoke;
+              border-radius: 4px;
+              margin: 0 auto;
+              font-family: sans-serif;
+              font-size: 14px;
+              padding-bottom: 10px;
+              padding-top: 10px;
+            ">
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129412; Poem Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128280; Rhyme Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129497; Haiku Generator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#129412; Rap Lyrics Genarator</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128212; Lyrics Generator</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <h5 style="
+              background-color: orange;
+              font-family: sans-serif;
+              padding: 10px 20px;
+              margin: 10px;
+            ">
+            Letter Writing Tools
+          </h5>
+          <div style="
+              background-color: whitesmoke;
+              border-radius: 4px;
+              margin: 0 auto;
+              font-family: sans-serif;
+              font-size: 14px;
+              padding-bottom: 10px;
+              padding-top: 10px;
+            ">
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128214;  Letter Writer</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128221; Love Letter</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128114; Cover Letter</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128221; Application Letter</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128114;  AI Email Writer</a>
+            </p>
+          </div>
+        </div>
+        <div>
+          <h5 style="
+              background-color: orange;
+              font-family: sans-serif;
+              padding: 10px 20px;
+              margin: 10px;
+            ">
+            Re-Writing Tools
+          </h5>
+          <div style="
+              background-color: whitesmoke;
+              border-radius: 4px;
+              margin: 0 auto;
+              font-family: sans-serif;
+              font-size: 14px;
+              padding-bottom: 10px;
+              padding-top: 10px;
+            ">
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128221; AIPlagiarism Remover</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128114; Sentence Rewriter</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128221; Paragraph Rewriter</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128214; Essay Rewriter</a>
+            </p>
+            <p
+              style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+              <a href="" style="text-decoration: none; color: #333;">&#128212; AI Summarizer</a>
+            </p>
+          </div>
+          <div>
+            <h5 style="
+              background-color: orange;
+              font-family: sans-serif;
+              padding: 10px 20px;
+              margin: 10px;
+            ">
+              More Writing Tools
+            </h5>
+            <div style="
+              background-color: whitesmoke;
+              border-radius: 4px;
+              margin: 0 auto;
+              font-family: sans-serif;
+              font-size: 14px;
+              padding-bottom: 10px;
+              padding-top: 10px;
+            ">
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#129412; AI Script Writer</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#129497; ChatGBT Alternative</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#129412; AI Essay Writer</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128212; AI Review Generator</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128214; Website Tagline Maker</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128221; Product Description</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128114; Job Description</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128196 4chan Greentext</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128196 Linkedin Summary</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128196 Quora Answer Writer</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128196 Thesis Statement</a>
+              </p>
+              <p
+                style="border: 1px solid #333; padding: 20px; background-color: rgb(245, 242, 238); border-radius: 4px; margin: 10px 20px; width: 189px;">
+                <a href="" style="text-decoration: none; color: #333;">&#128196 Vision Statement</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="margin-top: 20px;">
+    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+      <div style="max-width: 450px;">
+        <p style="color: black;"><a href="https://www.google.com" style="text-decoration: none; color: #333;"> <b>About Us</b> <br>
+        </a>Toolbaz is a
+          website that provides users with a variety of free online web tools. These tools can be used for a
+          variety of tasks, such as website creation, website management, and online marketing. The website
+          also offers a variety of other features, such as a blog, a forum, and a directory of resources.</p>
+      </div>
+      <div>
+        <p style="color: black;"><a href="https://www.google.com" style="text-decoration: none; color: #333;"> <b>Features</b> <br>
+        </a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Help Center</a></p>
+          <p><a href="https://www.youtube.com" style="text-decoration: none;">Paid With Mobile</a></p>
+          <p><a href="https://www.Linkedin.com" style="text-decoration: none;">Status</a></p>
+          <p><a href="https://www.indeed.com" style="text-decoration: none;">Changelog</a></p>
+          <p><a href="https://www.email.com" style="text-decoration: none;">Contact Support</a></p>
+      </div>
+      <div>
+        <p style="color: black;"><a href="https://www.google.com" style="text-decoration: none; color: #333;"> <b>Support</b> <br>
+        </a></p>
+          <p><a href="https://www.yeezy.com" style="text-decoration: none;">Home</a></p>
+          <p><a href="https://www.email.com" style="text-decoration: none;">About</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">FAQs</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Support</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Contact</a></p>
+      </div>
+      <div>
+        <p style="color: black;"><a href="https://www.google.com" style="text-decoration: none; color: #333;"> <b>Trending</b> <br>
+        </a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Shop</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Portfolio</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Blog</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Event</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Forumst</a></p>
+      </div>
+      <div>
+        <p style="color: black;"><a href="https://www.google.com" style="text-decoration: none; color: #333;"> <b>Legal</b> <br>
+        </a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Knowledge Center</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Custom Development</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Disclaimer</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Terms & Conditions</a></p>
+          <p><a href="https://www.google.com" style="text-decoration: none;">Privacy Policy</a></p>
+      </div>
+    </div>
+    <p style="
+    text-align: center;
+    background-color: orange;
+    border: 1px black solid; color: black;">Copyrights &copy 2022. All Rights Reserved by ToolBaz.com.</p>
+  </footer>
+
+</body>
+
+</html>
